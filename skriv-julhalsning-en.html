@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script defer type="module" src="js/showselectedtree.js"></script>
+    <script src="js/shared.js" type="text/javascript" charset="utf-8"></script>
+    <title>Christmas tree in AR</title>
+</head>
+
+<body>
+    <header>
+        <input hidden type="text" id="language" value="en">
+        <div class="logo-container">
+            <a href="./index-en.html">
+                <img src="./assets/images/Innovationscenter_logoW.png" alt="Innovation Center's logo">
+            </a>
+        </div>
+        <nav>
+            <a class="info" href="./info-en.html">
+                <img src="./assets/images/question-circle-fill.svg" alt="Info and instructions">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="choose-tree">
+            <div class="left-julgran">                    
+                <h4>Step 2/3</h4>
+                <div class="intro-text">
+                    <h1>Choose your Christmas greeting</h1>
+                    <select id="christmas-greeting" name="christmas-greeting">
+                        <option selected value="1">Merry Christmas!</option>
+                        <option value="2">Have a very innovative Christmas!</option>
+                        <option value="3">Season’s greetings!</option>
+                        <option value="4">Ho ho ho!</option>
+                        <option value="5">Happy holidays!</option>
+                        <option value="6">Xmas greetings!</option>
+                    </select>
+
+                    <div>
+                        <label for="wishes">wishes</label>
+                        <input style="color:black;" maxlength="20" type="text" id="qrcodeBtn" name="name"
+                            placeholder="your name...">
+                    </div>
+                    <div id="exampleText"></div>
+
+                    <div class="ctaInactive" id="julBtnHolder">
+                        <a href="./qr-kod-en.html" onclick="location.href=this.href+'?'+julgran +
+                            '|' + document.getElementById('christmas-greeting').value + 
+                            '|' + document.getElementById('qrcodeBtn').value;return false;"><button class="cta-select"
+                                id="skapaQrCode" disabled>Next</button></a>
+                        <a href="./index-EN.html" id="back-link">Restart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="treeSelection" id="ida5"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

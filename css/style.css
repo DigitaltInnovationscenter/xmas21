@@ -1,0 +1,337 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/images/bakgrund-julgranen.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0.38px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.38px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.info {
+    margin: 20px;
+}
+
+.logo-container img {
+    width: 300px;
+    padding: 15px;
+}
+
+.language {
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 25%;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+}
+
+#greeting.container {
+    position: absolute; 
+}
+
+#ida5.treeSelection {
+    cursor: grab;
+}
+
+.right video {
+    min-width: none;
+    float: right;
+}
+
+#qrcode {
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    image-rendering: pixelated;
+    border: #fff solid 2px;
+}
+
+.intro-text {
+    width: 531px;
+}
+
+.cta button {
+    background: #5500C9;
+    border-style: none;
+    min-width: 170px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.38px;
+    margin: 15px 0 15px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9b4aff;
+}
+
+.ctaInactive button {
+    background: #5c5c5cb0;
+    border-style: none;
+    min-width: 170px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.38px;
+    margin: 15px 0 15px 0;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.share {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.share-link {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.38px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    margin: 15px 40px 15px 0px;
+}
+
+.share-link img {
+    margin-right: 10px;
+}
+
+#qr.share-link {
+    margin-right: 5px;
+}
+
+.githubIcon {
+    width: 30px;
+    padding-bottom: 0px;
+}
+
+#back-link {
+    margin-left: 20px;
+}
+
+#christmas-greeting, option {
+    color: black;
+    margin-top: 20px;
+}
+
+#christmas-greeting, input {
+    border-radius: 4px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#selectedTree.right {
+    width: 400px;
+    height: 500px; 
+    background-color: rgba(248, 247, 245, 0.692);
+    border: #fff solid 1px;
+    border-radius: 8px;
+}
+
+.alternative-trees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.Tree {
+    width: 200px;
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+
+}
+
+.three {
+    width: 120px;
+    height: 180px;
+    background-color: rgba(248, 247, 245, 0.692);
+    border: #fff solid 1px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.treeSelection {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(248, 247, 245, 0.692);
+    border: #fff solid 1px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.three:hover {
+    background-color: #9b4aff;
+    border: none;
+}
+
+ .treeSelected{
+    border: #5500c9 solid 4px !important;
+}
+
+@media screen and (max-width: 980px) {
+    * {
+        text-align: center;
+    }
+
+    input, option {
+        text-align: left;
+    }
+
+    canvas {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .right video {
+        margin-top: 30px;
+        margin-right: 0px;
+        float: none;
+    }
+
+    #qrcode {
+        display: none;
+    }
+
+    .share {
+        justify-content: center;
+    }
+
+    a.share-link {
+        width: 207px;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    #qr.share-link {
+        width: auto;
+    }
+
+    #back-link {
+    margin-right: 0px;
+    }
+
+    .treeSelection {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .left {
+        overflow: overlay;
+        margin-top: 20px;
+    }
+
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: auto;
+        line-height: inherit;
+        margin-bottom: 20px;
+    }
+
+    h3, .cta button, .share-link {
+        font-size: 14px;
+        margin: auto;
+    }
+
+    .language {
+    padding: 0px 30px;
+    }
+
+    .alternative-trees {
+        flex-direction: row;
+    }
+
+    .intro-text {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .share {
+        margin-top: 30px;
+    }
+
+    a.share-link {
+        width: 180px;
+    }
+
+    #en.share-link, #qr.share-link {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    form, select, input {
+        font-size: 12px;
+    }
+}

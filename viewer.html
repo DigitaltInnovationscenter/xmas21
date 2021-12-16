@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>God jul från Innovationscenter!</title>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta charset="UTF-8" />
+
+  <link rel="icon" href="./favicon.png" type="image/x-icon">
+  <link href="css/viewer.css" rel="stylesheet" type="text/css">
+	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+  <!-- include three127 - this is the highest version that works with artoolkit -->
+   <script src="js/vendor/three127/build/three.js"></script>
+   <!-- <script src="js/vendor/three127/examples/js/loaders/GLTFLoader.js"></script> -->
+
+  <!-- include artoolkit -->
+  <script src="../jsartoolkit5/artoolkit.min.js"></script>
+	<script src="../jsartoolkit5/artoolkit.api.js"></script>
+
+	<!-- include threex.artoolkit -->
+	<script src="js/threex/threex-artoolkitsource.js"></script>
+	<script src="js/threex/threex-artoolkitcontext.js"></script>
+	<script src="js/threex/threex-arbasecontrols.js"></script>
+	<script src="js/threex/threex-armarkercontrols.js"></script>
+  
+  <!-- include main  -->
+  <script type="module" src="js/viewer.js"></script>
+
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <a href="https://www.digitaltinnovationscenter.se/">
+    <img src="./assets/images/Innovationscenter_logoW.png" alt="Innovation center's logo">
+    </a>
+  </div>
+  <nav>
+    <button>
+      <a href="./index.html"><p id="create_sv">Skicka din egen julgran</p></a>
+      <a href="./index-en.html"><p id="create_en">Send your own Christmas tree</p></a>
+    </button>
+
+    <a class="info" href="./info.html" target="_blank">
+      <img src="./assets/images/question-circle-fill.svg" alt="Info och instruktioner">
+    </a>
+  </nav>
+</header>
+<div  id="help" class="texts">
+  <div id="help_sv">
+    <p>Rikta kameran mot din QR-kod.</p>
+  </div>
+
+  <div id="help_en">
+    <p>Point your camera at your QR code.</p>
+  </div>
+</div>
+</body>
+
+</html>

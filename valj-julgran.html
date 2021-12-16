@@ -1,0 +1,63 @@
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <script var language="sv"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/shared.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+    <script defer type="module" src="js/pickatree.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <title>Julgran i AR</title>
+</head>
+
+<body>
+    <input hidden type="text" id="language" value="sv">
+    <header>
+        <div class="logo-container">
+            <a href="./index.html">
+                <img src="./assets/images/Innovationscenter_logoW.png" alt="Innovationscenters logga">
+            </a>
+        </div>
+        <nav>
+            <a class="info" href="./info.html">
+                <img src="./assets/images/question-circle-fill.svg" alt="Info och instruktioner">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="choose-tree">
+            <div class="left-julgran">
+                <h4>Steg 1/3</h4>
+                <div class="intro-text">
+                    <h1>Välj julgran</h1>
+                    <h3>Börja med att välja gran.</h3>
+                    <p><i>Ha lite tålamod, det kan ta lite tid att ladda in granarna...</i></p>
+                </div>
+
+                <div class="alternative-trees">
+                    <div class="three" id="ida1"></div>
+                    <div class="three" id="ida2"></div>
+                    <div class="three" id="ida3"></div>
+                    <div class="three" id="ida4"></div>
+                </div>
+
+                <div class="ctaInactive" id="buttonHolder">
+                    <a href="./skriv-julhalsning.html"
+                        onclick="location.href=this.href+'?'+julgran;return false;"><button class="cta-select" disabled
+                            id="btnNext">Nästa</button></a>
+                    <a href="./index.html" id="back-link">Börja om</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="treeSelection" id="ida5"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

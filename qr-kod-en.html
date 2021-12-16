@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <script var language = "en"></script>
+        <script src="dist/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="js/mainQrCode.js" type = "text/javascript" charset="utf-8" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script> 
+        
+
+        <title>Christmas tree in AR</title>
+    </head>
+    <body>
+        <header>
+            <input hidden type="text" id="language" value="en">
+            <div class="logo-container">
+                <a href="./index-en.html">
+                    <img src="./assets/images/Innovationscenter_logoW.png" alt="Innovation Center's logo">
+                </a>  
+            </div>
+            <nav>
+                <a class="info" href="./info-en.html">
+                    <img src="./assets/images/question-circle-fill.svg" alt="Info and instructions">
+                </a>
+            </nav>
+        </header>
+        <main>
+
+
+            <div class="container">
+                <div class="left">
+                    <h4>Step 3/3</h4>
+                    <div class="intro-text">
+                        <h1>The Christmas tree is ready!</h1>
+                        <h3>Download the QR code and send forward</h3>
+                    </div>
+                    
+                        <!-- QR-kod ska ligga här -->
+
+                    <div class="cta">
+                        <!-- Jag vet inte vad för typ av länk som ska ligga för att ladda ner QR-kod. -->
+                        <button class="cta-select" onclick="getQRCode()">Download QR code</button>
+                        <a href="./index-en.html" id="back-link">Start over</a>
+                    </div>
+
+                    <div class="share">
+                        <a class="share-link" id="qr" href="https://github.com/DigitaltInnovationscenter/xmas21" target="_blank"><img class="githubIcon" src="./assets/images/github.svg" alt="Icon for GitHub"/></a>
+                        
+                        <a class="share-link" id="qr" href="https://www.linkedin.com/company/digitalt-innovationscenter/" target="_blank"><img class="githubIcon" src="./assets/images/linkedin.svg" alt="Icon for LinkedIn"/></a>
+
+                        <a class="share-link" id="qr" href="https://www.instagram.com/digitaltinnovationscenter/" target="_blank"><img class="githubIcon" src="./assets/images/instagram.svg" alt="Icon for Instagram"/></a>                        
+                        
+                        <a class="share-link" id="qr" href="https://www.facebook.com/DigitaltInnovationscenter" target="_blank"><img class="githubIcon" src="./assets/images/facebook.svg" alt="Icon for Facebook"/></a>
+
+                        <a class="share-link" id="qr" href="https://twitter.com/DigitaltInnovc" target="_blank"><img class="githubIcon" src="./assets/images/twitter.svg" alt="Icon for Twitter"/></a>
+                    </div>
+                </div>
+                    <div id="qrcode"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+
+#faq.container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.qa {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: -webkit-fill-available;
+}
+
+#faq.left {
+    width: 48%;
+}
+
+.hr-line{
+  width: 100%;
+  margin: auto;
+}
+
+#middle-line.hr-line {
+    display: none;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+   margin-left: 0;
+   text-align: left;
+   width: 100%; 
+   /* padding: auto; (Gör ingen skillnad ändå) */
+}
+
+.faq-body p {
+    margin-bottom: 40px;
+}
+
+.faq-body img {
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: hsla(0, 0%, 0%, 0.356);
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: hsla(0, 0%, 0%, 0.356);
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    * {
+        text-align: left;
+    }
+
+    .qa {
+        flex-direction: column;
+    }
+
+    #faq.left {
+        width: 100%;
+    }
+
+    #middle-line.hr-line {
+        display: block;
+    }
+}

@@ -1,0 +1,152 @@
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <script var language = "sv"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/faq.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <title>Julgran i AR</title>
+    </head>
+    <body>
+        <header>
+            <input hidden type="text" id="language" value="sv">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img src="./assets/images/Innovationscenter_logoW.png" alt="Innovationscenters logga">
+                </a>
+            </div>
+            <div class="language">
+                <a href="./info-en.html">English</a>
+            </div>
+        </header>
+        <main>
+            <div class="container" id="faq">
+                <h1>Vanliga frågor</h1>
+                <div class="qa">
+
+                    <div class="left" id="faq">
+                                <div class="faq-julgran">
+                                    <h2 class="faq-page">Hur fungerar vår <i>AR julgran</i>?</h2>
+                                    <div class="faq-body">
+                                        <ol class="faq-list">
+                                            <li>Gå igenom de 3 stegen och skapa din QR kod. Ladda ner koden till din enhet.</li>
+                                            <li>Skicka eller dela QR-koden via meddelande eller lägg upp bilden på sociala medier.</li>
+                                            <li>De som ser bilden (utskriven eller på en skärm) kan nu ta fram sin mobil och scanna QR-koden.</li>
+                                            <li>Tillåt mobilkameran i webbläsaren.</li>
+                                            <li>Rikta kameran mot QR koden.</li>
+                                        </ol>
+                                    </div>
+                                    <hr class="hr-line">
+                                </div>
+    
+    
+    
+                                <div class="faq-qr">
+                                    <h2 class="faq-page">Vad är en <b>QR</b> kod?</h2>
+                                    <div class="faq-body">
+                                        <p><b>QR</b> står för <i>Quick Response</i> och är en typ av streckkod som består av både linjer och rader (2 dimensioner) till skillnad från vanliga streckkoder som bara består av linjer (1 dimension).
+                                            <p>En vanlig streckkod innehåller ofta ett par siffor eller en kortare text, men en QR kod kan på grund av att den är 2-dimensionell innehålla långa texter.
+                                            På grund av att en QR kod kan innehålla långa texter så kan den också innehålla långa webadresser.
+                                            Därför har den blivit väldigt populär på internet för att hjälpa användare att hitta en speciell webbsida. </p>
+                                            <p>De flesta moderna mobiltelefoners kamera känner automatiskt av att det är en QR kod och om QR koden innehåller en korrekt websideadress så frågar mobilen om du vill ”gå till sidan”, dvs öppna upp din internetläsare och besöka websidan.</p>
+                                            <p><a href="https://sv.wikipedia.org/wiki/QR-kod" target="_blank">Wiki</a></p>
+                                    </div>
+                                    <hr class="hr-line">
+                                </div>
+    
+    
+                                <div class="faq-ar">
+                                    <h2 class="faq-page">Vad betyder <b>AR</b>?</h2>
+                                    <div class="faq-body">
+                                        <p><b>AR</b> står för <i>Augumented Reality</i> och på svenska brukar man använda orden <i>Förstärkt Verklighet</i>.</p>
+                                        <P>I grunden innebär AR att man <i>lägger in</i> digitala / virtuella objekt i den verkliga världen.
+                                        Det krävs naturligvis en viss teknologi för att detta ska fundera, men nästan alla moderna mobiltelefoner idag stödjer AR. </P>
+                                        <p>AR kan också användas i speciella glasögon och <i>headsets</i> som exempelvis Microsofts <b>Hololens</b></p>
+                                        <p><a href="https://sv.wikipedia.org/wiki/F%C3%B6rst%C3%A4rkt_verklighet" target="_blank">Wiki</a></p>
+                                    </div>
+                                    <hr class="hr-line">
+                                </div>
+    
+    
+                                <div class="faq-ankare">
+                                    <h2 class="faq-page">Var placeras julgranen? <i>Ankare</i>?</h2>
+                                    <div class="faq-body">
+                                        <p>Det finns 3 olika metoder inom AR tekniken att bestämma var de virtuella objekten ska placeras:</p>
+                                        <ul>
+                                            <li>På en geografisk plats (longitud och latitud)</li>
+                                            <li>På en angiven bild eller logotyp (ankare)</li>
+                                            <li>Låta användaren bestämma själv</li>
+                                        </ul>
+                                        <p>Vår lösning bygger på att applikationen försöker hitta en speciell logotyp, ett så kallat <i>ankare</i></p>
+                                        <p>Kameran försöker hitta detta ankare någonstans i bilden, och så fort den hittar detta ankare så placeras det virituella objektet där.</p>
+                                        <p>Vi använder följande bild som "ankare"</p>
+                                        <img src="./assets/markers/kanji.png" alt="Kanji Ankare">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left" id="faq">
+    
+    
+    
+                                <hr class="hr-line" id="middle-line">
+    
+                                <div class="faq-skak">
+                                    <h2 class="faq-page">Varför <b>skakar</b> julgranen lite?</h2>
+                                    <div class="faq-body">
+                                        <p>Vi använder endast öppen källkod för vår lösning och den tekniken vi valt har en del begränsningar i vad som är möjligt att göra.
+                                            Julgranen skakar på grund av att applikationen känner av små små vibrationer från din telefon, så små att du kanske inte ens själv märker dom normalt sätt.
+                                            <i>Om du testar att ställa mobilen mot ett fast underlag så kommer du märka att granen slutar skaka.</i>
+                                        </p>
+                                    </div>
+                                    <hr class="hr-line">
+                                </div>
+    
+    
+    
+    
+                                <div class="faq-ic">
+                                    <h2 class="faq-page">Vad är <i>Digitalt Innovationscenter</i>?</h2>
+                                    <div class="faq-body">
+                                        <p>Digitalt Innovationscenter är en del av Arbetsförmedlingen som arbetar med innovation för framtidens arbetsmarknad.</p>
+                                    </div>
+                                    <hr class="hr-line">
+                                </div>
+    
+    
+                                <div class="faq-why">
+                                    <h2 class="faq-page">Varför har vi utveckat detta?</h2>
+                                    <div class="faq-body">
+                                        <p>Vi tror att AR på sikt kommer bli en del av alla människors vardag.
+                                            Allt från när du går på museum till när du ska handla på nätet.
+                                            Kanske kommer du till och med presentera ditt CV via AR? </p>
+                                            <p>Det finns mängder av användningsområden och vi börjar nu utforska detta för att se hur AR kan användas på arbetsmarknaden. </p>
+    
+                                            <p>Vi behövde ett releativt enkelt projekt att komma igång med och eftersom det är jul så tänkte vi att detta var lagom bra projekt för oss.</p>
+                                    </div>
+                                    <hr class="hr-line">
+                                </div>
+    
+    
+                                <div class="faq-teknik">
+                                    <h2 class="faq-page">Vilken teknik har ni använt?</h2>
+                                    <div class="faq-body">
+                                        <p>Vu har byggt denna lösning helt på öppen källkod i HTML,CSS och JavaScript. Hela lösningen är klientbaserad.</p>
+                                        <p>All källkod finns här på <a href="https://github.com/DigitaltInnovationscenter/xmas21">GitHub</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cta">
+                            <a href="./valj-julgran.html"><button class="cta-select">Testa</button></a>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/faq.js"type = "text/javascript" charset="utf-8"></script>
+    </body>
+    </html>
